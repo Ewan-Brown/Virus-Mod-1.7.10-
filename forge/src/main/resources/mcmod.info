@@ -1,0 +1,17 @@
+[
+{
+  "modid": "virusmod",
+  "name": "VirusMod",
+  "description": "Viruses!",
+  "version": "1.1.0",
+  "credits": "Created by Hannibal_The_Cannibal",
+  "logoFile": "",
+  "mcversion": "",
+  "url": "",
+  "updateUrl": "",
+  "authors":"[]",
+  "parent":"",
+  "screenshots": [],
+  "dependencies": []
+}
+]
