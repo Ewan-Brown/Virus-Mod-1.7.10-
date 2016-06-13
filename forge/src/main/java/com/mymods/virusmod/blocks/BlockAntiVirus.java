@@ -32,6 +32,7 @@ public class BlockAntiVirus extends BlockBasic{
 	public static void init(){
 		cureList.add(VirusMod.BLOCK_VIRUS);
 		cureList.add(VirusMod.BLOCK_VIRUS_SAND);
+		cureList.add(VirusMod.BLOCK_VIRUS_MINER);
 		for(Block b : cureList){
 			cureListInt.add(new Integer(Block.getIdFromBlock(b)));
 		}

@@ -25,6 +25,10 @@ public class BlockVirusMiner extends BlockVirus{
 		blackListBlock.add(Block.getBlockFromName("chest"));
 		blackListBlock.add(Block.getBlockFromName("bedrock"));
 		blackListBlock.add(VirusMod.BLOCK_VIRUS_MINER);
+		blackListBlock.add(VirusMod.BLOCK_VIRUS);
+		blackListBlock.add(VirusMod.BLOCK_ANTIVIRUS);
+		blackListBlock.add(VirusMod.BLOCK_VIRUS_SAND);
+
 
 		for(Block b : blackListBlock){
 			blackListInt.add(new Integer(Block.getIdFromBlock(b)));
@@ -32,9 +36,8 @@ public class BlockVirusMiner extends BlockVirus{
 	}
 	
 	public BlockVirusMiner() {
-		setBlockTextureName(VirusMod.ID+":"+"VirusMinerBlock");
+		setBlockTextureName(VirusMod.ID+":"+"MinerVirusBlock");
 		setBlockName(VirusMod.ID+"_"+"VirusMinerBlock");
-		setBlockTextureName("cake_top");
 	}
 	
 	public void check(World worldObj, int xCoord, int yCoord, int zCoord){
@@ -42,7 +45,6 @@ public class BlockVirusMiner extends BlockVirus{
 		if(!worldObj.isRemote){
 			TileEntityVirus e = (TileEntityVirus	)worldObj.getTileEntity(xCoord, yCoord, zCoord);
 			if(!e.isInRange(xCoord, yCoord, zCoord)){
-				System.out.println("Alrigh Alright Alright!");
 				return;
 			}
 			for(int x = -1; x < 2;x++){

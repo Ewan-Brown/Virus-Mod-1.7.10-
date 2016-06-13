@@ -32,7 +32,7 @@ public class BlockVirus extends BlockBasic{
 		blackListBlock.add(Block.getBlockFromName("air"));
 		blackListBlock.add(VirusMod.BLOCK_VIRUS); //165
 		blackListBlock.add(VirusMod.BLOCK_ANTIVIRUS); //166
-		//blackListBlock.add(VirusMod.BLOCK_VIRUS_WALL);
+		blackListBlock.add(VirusMod.BLOCK_VIRUS_MINER);
 		for(Block b : blackListBlock){
 			blackListInt.add(new Integer(Block.getIdFromBlock(b)));
 		}
